@@ -13,15 +13,19 @@
     />
   </head>
   <body>
+    {% include 'navbar.html' %}
+    <img
+      src="static/banner.jpg"
+      alt="img"
+      class="img-fluid"
+      id="banner"
+    />
     <div class="container">
-      <h2>{{company_name}} Career</h2>
-      <img
-        src="static/banner.jpg"
-        alt="img"
-        class="img-fluid"
-        id="banner"
-      />
-      <h1>About Recxo</h1>
+      <h1 class="text-center mt-2 mb-4" >{{company_name}} Career</h1>
+
+  
+      
+      
       <p class="body-text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
         dolorem. Blanditiis nobis vero qui commodi perspiciatis vel, minus
@@ -41,6 +45,7 @@
         <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">Copyright 2024, Recxo</p>
       </div>
+      {% include 'footer.html'%}
     </div>
   </body>
 </html>
